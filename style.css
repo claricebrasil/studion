@@ -19,23 +19,32 @@ body {
     padding-top: 7.5rem;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 header, main, footer {
     overflow-x: hidden;
 }
 
 .navbar {
-    display: grid;
     z-index: 1;
-    grid-template-columns: 1fr 9fr;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar__container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
     width: 100vw;
     height: 7.5rem;
     padding: 0 1rem;
-    background-color: #000;
-    color: #fff;
 }
 
 .navbar__links {
@@ -101,7 +110,7 @@ li {
 
 .slide__copy {
     position: absolute;
-    top: 5rem;
+    top: 15rem;
     left: 53vw;
 }
 
@@ -161,7 +170,7 @@ li {
 }
 
 .counter__container h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .institutional {
@@ -170,6 +179,10 @@ li {
     gap: 3.125rem;
     align-items: center;
     padding: 4rem;
+}
+
+.institutional__image {
+    max-width: 550px;
 }
 
 .institutional__copy {
@@ -199,5 +212,53 @@ li {
 
 .btn--institutional:hover {
     color: var(--color-copy);
+    background: unset;
+}
+
+.quote {
+    background-image: url(./images/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+    font-size: .9375rem;
+    font-weight: 400;
+    letter-spacing: .1875rem;
+    line-height: 1.4375rem;
+    max-width: 51ch;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -.1875rem;
+    line-height: 5rem;
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+    display: block;
+}
+
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
     background: unset;
 }
