@@ -112,7 +112,7 @@ li {
 
 .slide__copy {
     position: absolute;
-    top: 7rem;
+    top: 8rem;
     left: 53vw;
 }
 
@@ -367,7 +367,7 @@ li {
 
 .footer p {
     text-align: center;
-    font-size: .875rem;
+    font-size: .900rem;
     font-weight: 300;
     margin: 2.5rem 0;
 }
